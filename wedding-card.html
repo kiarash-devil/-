@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>دعوت‌نامه عروسی علی و سارا</title>
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;500;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f6ece4;--ink:#4a2c2a;--gold:#b8893b;--paper:#fffaf3;--rose:#c0485f;--shadow:rgba(74,44,42,.25);box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1d1416;--ink:#f3e3d6;--gold:#e0b25a;--paper:#2b1e20;--rose:#ee7a90;--shadow:rgba(0,0,0,.5)}}
+:root[data-theme="dark"]{--bg:#1d1416;--ink:#f3e3d6;--gold:#e0b25a;--paper:#2b1e20;--rose:#ee7a90;--shadow:rgba(0,0,0,.5)}
+*{box-sizing:border-box;margin:0}
+html,body{height:100%;background:var(--bg);color:var(--ink);font-family:Vazirmatn,Tahoma,sans-serif;overflow-x:hidden}
+body{display:flex;align-items:center;justify-content:center;background:radial-gradient(circle at 50% 30%,var(--paper),var(--bg))}
+.stage{width:100%;max-width:420px;padding:16px;text-align:center}
+/* envelope */
+#env{position:relative;width:300px;height:200px;margin:0 auto;cursor:pointer;perspective:900px;transition:opacity .8s,transform .8s}
+#env .back,#env .front{position:absolute;inset:0;border-radius:8px}
+#env .back{background:#d9b98f;box-shadow:0 14px 30px var(--shadow)}
+#env .front{background:linear-gradient(135deg,#ecd3ad 50%,transparent 50%),linear-gradient(225deg,#e6c99f 50%,transparent 50%);z-index:3;clip-path:polygon(0 0,50% 55%,100% 0,100% 100%,0 100%)}
+#env .front::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 40%,#e3c398 40%);clip-path:polygon(0 100%,50% 45%,100% 100%)}
+#env .flap{position:absolute;left:0;right:0;top:0;height:110px;background:#cfa978;clip-path:polygon(0 0,100% 0,50% 100%);transform-origin:top;transition:transform .9s ease,z-index 0s .45s;z-index:4}
+#env .mini{position:absolute;left:18px;right:18px;top:14px;height:170px;background:var(--paper);border-radius:6px;z-index:2;transition:transform 1s ease .7s;display:flex;align-items:center;justify-content:center;color:var(--gold);font-size:26px}
+#env .seal{position:absolute;left:50%;top:92px;width:54px;height:54px;margin:-27px 0 0 -27px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#e0607a,#9d2a43);z-index:6;display:flex;align-items:center;justify-content:center;color:#fff;font-size:24px;box-shadow:0 3px 8px var(--shadow);animation:pulse 1.6s infinite;transition:opacity .4s,transform .4s}
+@keyframes pulse{50%{transform:scale(1.12)}}
+#env.open .seal{opacity:0;transform:scale(1.8);animation:none}
+#env.open .flap{transform:rotateX(180deg);z-index:1}
+#env.open .mini{transform:translateY(-120px)}
+#env.gone{opacity:0;transform:translateY(60px) scale(.9);pointer-events:none}
+.hint{margin-top:34px;color:var(--gold);font-weight:500;animation:blink 1.8s infinite}
+@keyframes blink{50%{opacity:.35}}
+/* card */
+#card{display:none;background:var(--paper);border:2px solid var(--gold);outline:1px solid var(--gold);outline-offset:-9px;border-radius:14px;padding:30px 20px;box-shadow:0 18px 40px var(--shadow);animation:rise 1s ease both}
+@keyframes rise{from{opacity:0;transform:translateY(80px) scale(.9)}to{opacity:1;transform:none}}
+.small{color:var(--gold);font-weight:500;letter-spacing:1px;font-size:14px}
+h1{font-size:34px;font-weight:800;margin:10px 0;line-height:1.5}
+h1 span{color:var(--rose)}
+.fade{opacity:0;transform:translateY(14px);transition:opacity 1s,transform 1s}
+.fade.show{opacity:1;transform:none}
+/* run scene */
+#scene{direction:ltr;position:relative;height:96px;margin:18px 0 6px;border-bottom:2px dashed var(--gold)}
+#scene .c{position:absolute;bottom:4px;font-size:44px;line-height:1}
+#groom{left:0;transition:left 6.5s linear;animation:hop .45s infinite}
+#bride{right:0}
+@keyframes hop{50%{margin-bottom:10px}}
+.h{position:absolute;bottom:34px;font-size:24px;transition:transform .5s,opacity .5s}
+.h.got{transform:translateY(-34px) scale(1.7);opacity:0}
+#cnt{color:var(--rose);font-weight:800;min-height:24px}
+.burst{position:absolute;font-size:22px;pointer-events:none;animation:fly 1.8s ease-out forwards}
+@keyframes fly{to{transform:translate(var(--x),var(--y)) scale(1.4);opacity:0}}
+/* details */
+.det{margin-top:14px;border-top:1px solid var(--gold);padding-top:16px}
+.det b{display:block;font-size:20px;margin:4px 0}
+.cd{display:flex;gap:8px;justify-content:center;margin:14px 0;direction:ltr}
+.cd div{background:var(--bg);border-radius:10px;padding:8px 10px;min-width:58px;font-size:20px;font-weight:800}
+.cd small{display:block;font-size:11px;font-weight:300}
+.btn{display:inline-block;margin-top:6px;background:var(--rose);color:#fff;text-decoration:none;padding:10px 22px;border-radius:30px;font-family:inherit;font-weight:500;border:0;font-size:15px}
+#mute{position:fixed;top:calc(env(safe-area-inset-top,0px) + 12px);left:12px;width:40px;height:40px;border-radius:50%;border:1px solid var(--gold);background:var(--paper);color:var(--ink);font-size:18px;display:none;z-index:9}
+</style>
+</head>
+<body>
+<button id="mute" aria-label="موسیقی">🔊</button>
+<div class="stage">
+  <div id="envWrap">
+    <div id="env">
+      <div class="back"></div>
+      <div class="mini">❦</div>
+      <div class="front"></div>
+      <div class="flap"></div>
+      <div class="seal">♥</div>
+    </div>
+    <p class="hint" id="hint">برای باز کردن نامه ضربه بزنید</p>
+  </div>
+
+  <div id="card">
+    <div class="small fade" id="a1">به نام خداوند عشق</div>
+    <h1 class="fade" id="a2">علی <span>♥</span> سارا</h1>
+    <p class="fade" id="a3">با شادی، شما را به جشن پیوند خود دعوت می‌کنیم</p>
+    <div id="scene" class="fade">
+      <div class="c" id="groom">🤵</div>
+      <div class="c" id="bride">👰</div>
+    </div>
+    <div id="cnt"></div>
+    <div class="det fade" id="det">
+      <div class="small">زمان برگزاری</div>
+      <b>پنج‌شنبه ۱۵ بهمن ۱۴۰۵ · ساعت ۱۸:۰۰</b>
+      <div class="cd" id="cd"></div>
+      <div class="small">مکان</div>
+      <b>تالار نمونه</b>
+      <p style="font-weight:300">تهران، خیابان نمونه، پلاک ۱۲</p>
+      <a class="btn" href="https://maps.google.com/?q=Tehran" target="_blank" rel="noopener">مسیریابی 📍</a>
+    </div>
+  </div>
+</div>
+<script>
+var $=function(i){return document.getElementById(i)};
+var env=$('env'),started=false,ac=null,muted=false,timer=null;
+/* music: soft synthesized melody */
+var notes=[523,659,784,659,587,698,880,698,523,659,784,1047,988,784,659,587];
+function startMusic(){
+  try{
+    ac=new (window.AudioContext||window.webkitAudioContext)();
+    var i=0;
+    function tick(){
+      if(muted||!ac)return;
+      var o=ac.createOscillator(),g=ac.createGain(),t=ac.currentTime;
+      o.type='sine';o.frequency.value=notes[i%notes.length]/ (i%8==0?2:1);
+      g.gain.setValueAtTime(0,t);g.gain.linearRampToValueAtTime(.12,t+.05);g.gain.exponentialRampToValueAtTime(.001,t+.9);
+      o.connect(g);g.connect(ac.destination);o.start(t);o.stop(t+1);i++;
+    }
+    tick();timer=setInterval(tick,420);
+    $('mute').style.display='block';
+  }catch(e){}
+}
+$('mute').onclick=function(){muted=!muted;this.textContent=muted?'🔇':'🔊'};
+env.onclick=function(){
+  if(started)return;started=true;
+  startMusic();
+  $('hint').style.display='none';
+  env.classList.add('open');
+  setTimeout(function(){env.classList.add('gone')},2300);
+  setTimeout(function(){$('envWrap').style.display='none';$('card').style.display='block';sequence()},3100);
+};
+function show(id,d){setTimeout(function(){$(id).classList.add('show')},d)}
+function sequence(){
+  show('a1',300);show('a2',1100);show('a3',2000);show('scene',3000);
+  setTimeout(runScene,3600);
+}
+function runScene(){
+  var sc=$('scene'),w=sc.clientWidth,g=$('groom'),n=0,total=5;
+  var pos=[.2,.32,.46,.6,.72],hs=[];
+  pos.forEach(function(p){
+    var h=document.createElement('div');h.className='h';h.textContent='❤️';
+    h.style.left=(p*w)+'px';sc.appendChild(h);hs.push({el:h,x:p*w});
+  });
+  var dur=6500,t0=Date.now(),maxX=w-100;
+  g.style.left=maxX+'px';
+  var iv=setInterval(function(){
+    var x=(Date.now()-t0)/dur*maxX;
+    hs.forEach(function(h){
+      if(!h.got&&x+20>=h.x){h.got=1;h.el.classList.add('got');n++;$('cnt').textContent='❤️ × '+n}
+    });
+    if(Date.now()-t0>=dur){clearInterval(iv);arrive()}
+  },60);
+}
+function arrive(){
+  g.style.animation='none';
+  var sc=$('scene'),b=$('bride').getBoundingClientRect(),s=sc.getBoundingClientRect();
+  for(var i=0;i<16;i++){
+    var e=document.createElement('div');e.className='burst';e.textContent=['❤️','💖','✨','💕'][i%4];
+    e.style.left=(b.left-s.left+20)+'px';e.style.top='30px';
+    e.style.setProperty('--x',(Math.random()*220-110)+'px');e.style.setProperty('--y',(-Math.random()*90-10)+'px');
+    sc.appendChild(e);
+  }
+  $('cnt').textContent='به هم رسیدند 💍';
+  show('det',1200);countdown();
+}
+var g=$('groom');
+function countdown(){
+  var target=new Date('2027-02-04T18:00:00+03:30').getTime();
+  function up(){
+    var d=Math.max(0,target-Date.now()),
+    v=[Math.floor(d/864e5),Math.floor(d/36e5)%24,Math.floor(d/6e4)%60,Math.floor(d/1e3)%60],
+    l=['روز','ساعت','دقیقه','ثانیه'];
+    $('cd').innerHTML=v.map(function(x,i){return '<div>'+x+'<small>'+l[i]+'</small></div>'}).join('');
+  }
+  up();setInterval(up,1000);
+}
+</script>
+</body>
+</html>
